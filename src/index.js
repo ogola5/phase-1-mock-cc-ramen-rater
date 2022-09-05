@@ -45,12 +45,12 @@ let fetchRamen = async () => {
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     const container = document.querySelector("#ramen-detail");
-    ramenName = document.createElement("h2");
-    ramenName.innerText = nameInput.value;
+    ramenFrame = document.createElement("h2");
+    ramenFrame.innerText = nameInput.value;
     img = document.createElement("img");
     img.src = imgInput.value;
     restaurantName = document.createElement("h3");
     restaurantName = restInput.value;
   
-    constainer.append(ramenName, img, restaurantName);
+    container.append(ramenFrame, img, restaurantName);
   });
